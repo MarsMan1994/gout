@@ -3,7 +3,7 @@ package core
 import (
 	"errors"
 	"fmt"
-	"gorm.io/gorm"
+	"github.com/beego/beego/v2/client/orm"
 	"net/http"
 	"net/url"
 	"strings"
@@ -13,10 +13,8 @@ import (
 
 type TCookieJar struct {
 	mu sync.Mutex
-	db *gorm.DB
 }
 type Entery struct {
-	gorm.Model_UUID
 	JarKey string `yaml:"jar_key"`
 	Name       string `yaml:"name"`
 	Value      string `yaml:"value"`
@@ -32,16 +30,11 @@ type Entery struct {
 	//LastAccess time.Time `yaml:"last_access"`
 }
 
-func (e *Entery) BeforeCreate(tx *gorm.DB) error {
-	e.ID=uuid.New()
-	return nil
-}
 
 
 
-func (jar *TCookieJar) InitCookieJarWithSqlite(db *gorm.DB) (err error) {
-	jar.db=db
-	jar.db.Set("gorm:table_options", "ENGINE=InnoDB").AutoMigrate(&Entery{})
+func (jar *TCookieJar) InitCookieJarWithDB() (err error) {
+	orm.RegisterModel(&Entery{})
 	return
 }
 func (jar TCookieJar) SetCookies(u *url.URL, cookies []*http.Cookie)  {
@@ -52,19 +45,15 @@ func (jar TCookieJar) SetCookies(u *url.URL, cookies []*http.Cookie)  {
 		}
 		e.JarKey=fmt.Sprintf("%s://%s",u.Scheme,u.Host)
 		var oldCookie Entery
-		jar.db.Delete(&oldCookie,Entery{
-			JarKey: e.JarKey,
-			Name: e.Name,
-		})
-		jar.db.Save(&e)
+		o:=orm.NewOrm()
+		o.Read(&oldCookie)
+		o.Insert(&e)
 	}
 }
 
 func (jar TCookieJar) Cookies(u *url.URL) (cookies []*http.Cookie)  {
 	var enteries []Entery
-	jar.db.Find(&enteries,Entery{
-		JarKey: fmt.Sprintf("%s://%s",u.Scheme,u.Host),
-	})
+	//o:=orm.NewOrm()
 	for _,entery:=range enteries{
 		if !strings.HasPrefix(u.Path,entery.Path){
 			continue
