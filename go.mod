@@ -1,4 +1,4 @@
-module github.com/guonaihong/gout
+module github.com/MarsMan1994/gout
 
 require (
 	github.com/gin-gonic/gin v1.7.0
