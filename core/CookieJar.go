@@ -3,7 +3,6 @@ package core
 import (
 	"errors"
 	"fmt"
-	"github.com/go-basic/uuid"
 	"gorm.io/gorm"
 	"net/http"
 	"net/url"
