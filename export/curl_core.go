@@ -11,7 +11,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/guonaihong/gout/core"
+	"github.com/MarsMan1994/gout/core"
 )
 
 type curl struct {

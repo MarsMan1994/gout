@@ -8,7 +8,7 @@ import (
 	"sync/atomic"
 	"testing"
 
-	"github.com/guonaihong/gout/testdata"
+	"github.com/MarsMan1994/gout/testdata"
 	"github.com/stretchr/testify/assert"
 	"google.golang.org/protobuf/proto"
 

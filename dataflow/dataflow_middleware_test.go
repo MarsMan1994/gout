@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	api "github.com/guonaihong/gout/interface"
+	api "github.com/MarsMan1994/gout/interface"
 	"github.com/stretchr/testify/assert"
 )
 

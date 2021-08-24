@@ -1,7 +1,7 @@
 package gout
 
 import (
-	"github.com/guonaihong/gout/dataflow"
+	"github.com/MarsMan1994/gout/dataflow"
 )
 
 type Text struct {

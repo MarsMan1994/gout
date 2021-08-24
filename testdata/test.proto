@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "github.com/guonaihong/gout/testdata";
+option go_package = "github.com/MarsMan1994/gout/testdata";
 
 package testdata;
 

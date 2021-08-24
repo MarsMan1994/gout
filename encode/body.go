@@ -2,7 +2,7 @@ package encode
 
 import (
 	"fmt"
-	"github.com/guonaihong/gout/core"
+	"github.com/MarsMan1994/gout/core"
 	"io"
 	"reflect"
 )

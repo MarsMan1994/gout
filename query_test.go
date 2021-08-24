@@ -9,7 +9,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/guonaihong/gout/dataflow"
+	"github.com/MarsMan1994/gout/dataflow"
 )
 
 type queryWithSlice struct {

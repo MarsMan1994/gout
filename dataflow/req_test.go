@@ -1,7 +1,7 @@
 package dataflow
 
 import (
-	"github.com/guonaihong/gout/encode"
+	"github.com/MarsMan1994/gout/encode"
 	"github.com/stretchr/testify/assert"
 	"testing"
 	"time"

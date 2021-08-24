@@ -2,7 +2,7 @@ package decode
 
 import (
 	"fmt"
-	"github.com/guonaihong/gout/core"
+	"github.com/MarsMan1994/gout/core"
 	"io"
 	"io/ioutil"
 	"reflect"

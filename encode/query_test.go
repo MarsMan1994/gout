@@ -6,8 +6,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/guonaihong/gout/core"
-	"github.com/guonaihong/gout/setting"
+	"github.com/MarsMan1994/gout/core"
+	"github.com/MarsMan1994/gout/setting"
 	"github.com/stretchr/testify/assert"
 )
 

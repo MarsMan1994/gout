@@ -9,8 +9,8 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/guonaihong/gout/color"
-	"github.com/guonaihong/gout/core"
+	"github.com/MarsMan1994/gout/color"
+	"github.com/MarsMan1994/gout/core"
 	"github.com/stretchr/testify/assert"
 )
 

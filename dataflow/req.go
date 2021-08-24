@@ -11,11 +11,11 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/guonaihong/gout/core"
-	"github.com/guonaihong/gout/decode"
-	"github.com/guonaihong/gout/encode"
-	api "github.com/guonaihong/gout/interface"
-	"github.com/guonaihong/gout/setting"
+	"github.com/MarsMan1994/gout/core"
+	"github.com/MarsMan1994/gout/decode"
+	"github.com/MarsMan1994/gout/encode"
+	api "github.com/MarsMan1994/gout/interface"
+	"github.com/MarsMan1994/gout/setting"
 )
 
 type Do interface {

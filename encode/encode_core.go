@@ -9,7 +9,7 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/guonaihong/gout/core"
+	"github.com/MarsMan1994/gout/core"
 )
 
 // ErrUnsupported Unsupported type error returned

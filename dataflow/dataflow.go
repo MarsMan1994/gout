@@ -9,10 +9,10 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/guonaihong/gout/decode"
-	"github.com/guonaihong/gout/encode"
-	api "github.com/guonaihong/gout/interface"
-	"github.com/guonaihong/gout/setting"
+	"github.com/MarsMan1994/gout/decode"
+	"github.com/MarsMan1994/gout/encode"
+	api "github.com/MarsMan1994/gout/interface"
+	"github.com/MarsMan1994/gout/setting"
 	"golang.org/x/net/proxy"
 )
 
@@ -395,7 +395,7 @@ func (df *DataFlow) Debug(d ...interface{}) *DataFlow {
 	return df
 }
 
-// https://github.com/guonaihong/gout/issues/264
+// https://github.com/MarsMan1994/gout/issues/264
 // When calling SetWWWForm(), the Content-Type header will be added automatically,
 // and calling NoAutoContentType() will not add an HTTP header
 //

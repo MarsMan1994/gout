@@ -1,7 +1,7 @@
 package filter
 
 import (
-	"github.com/guonaihong/gout/dataflow"
+	"github.com/MarsMan1994/gout/dataflow"
 	"math/rand"
 	"time"
 )

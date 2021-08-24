@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/guonaihong/gout/core"
+	"github.com/MarsMan1994/gout/core"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -3,8 +3,8 @@ package gout
 import (
 	"bufio"
 	"bytes"
-	"github.com/guonaihong/gout/core"
-	"github.com/guonaihong/gout/dataflow"
+	"github.com/MarsMan1994/gout/core"
+	"github.com/MarsMan1994/gout/dataflow"
 	"io"
 	"io/ioutil"
 	"net/http"

@@ -3,7 +3,7 @@ package encode
 import (
 	"encoding/json"
 	"errors"
-	"github.com/guonaihong/gout/core"
+	"github.com/MarsMan1994/gout/core"
 	"io"
 )
 

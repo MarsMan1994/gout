@@ -1,12 +1,9 @@
 package gout
 
 import (
+	"github.com/MarsMan1994/gout/dataflow"
 	"net/http"
 	"time"
-
-	"github.com/guonaihong/gout/dataflow"
-	_ "github.com/guonaihong/gout/export"
-	_ "github.com/guonaihong/gout/filter"
 )
 
 // debug

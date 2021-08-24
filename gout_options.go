@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/guonaihong/gout/setting"
+	"github.com/MarsMan1994/gout/setting"
 )
 
 type options struct {

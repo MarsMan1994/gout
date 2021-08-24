@@ -4,7 +4,7 @@ import (
 	"errors"
 	"io"
 
-	"github.com/guonaihong/gout/core"
+	"github.com/MarsMan1994/gout/core"
 	"gopkg.in/yaml.v2"
 )
 
